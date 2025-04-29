@@ -30,7 +30,7 @@ const SkillsSection = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={controls}
     >
-    <section id="skills" className="bg-portfolio-gray">
+    <div id="skills" className="bg-portfolio-gray">
       <div className="section-container">
         <h2 className="section-title">Skills</h2>
         
@@ -99,7 +99,8 @@ const SkillsSection = () => {
           </Card>
         </div>
       </div>
-    </section>
+    </div>
+  </motion.section>
   );
 };
 

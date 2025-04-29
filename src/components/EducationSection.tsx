@@ -20,7 +20,7 @@ const EducationSection = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={controls}
     >
-    <section id="education" className="bg-gradient-to-b from-white to-portfolio-gray">
+    <div id="education" className="bg-gradient-to-b from-white to-portfolio-gray">
       <div className="section-container">
         <h2 className="section-title">Academic Background</h2>
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
@@ -164,7 +164,8 @@ const EducationSection = () => {
           </blockquote>
         </div>
       </div>
-    </section>
+    </div>
+  </motion.section>
   );
 };
 

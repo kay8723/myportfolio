@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -7,7 +7,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Phone, Mail, Github, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { motion } from 'framer-motion';
 
 const ContactSection = () => {
   const ref = React.useRef<HTMLDivElement>(null);
@@ -42,7 +41,7 @@ const ContactSection = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={controls}
     >
-    <section id="contact" className="bg-white">
+    <div id="contact" className="bg-white">
       <div className="section-container">
         <h2 className="section-title">Contact Me</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -173,7 +172,8 @@ const ContactSection = () => {
           </motion.div>
         </div>
       </div>
-    </section>
+    </div>
+  </motion.section>
   );
 };
 

@@ -20,7 +20,7 @@ const ExperienceSection = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={controls}
     >
-    <section id="experience" className="bg-portfolio-gray">
+    <div id="experience" className="bg-portfolio-gray">
       <div className="section-container">
         <h2 className="section-title">Experience</h2>
         
@@ -61,8 +61,8 @@ const ExperienceSection = () => {
           </div>
         </div>
       </div>
-    </section>
-    </motion.section>
+    </div>
+  </motion.section>
   );
 };
 
