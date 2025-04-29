@@ -62,6 +62,7 @@ const ExperienceSection = () => {
         </div>
       </div>
     </section>
+    </motion.section>
   );
 };
 
